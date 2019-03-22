@@ -40,7 +40,7 @@ public class AdapterNews extends RecyclerView.Adapter<AdapterNews.VIewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return data.size();
     }
 
     public class VIewHolder extends RecyclerView.ViewHolder {
