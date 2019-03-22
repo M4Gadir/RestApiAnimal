@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 
-public class Response{
+public class ResponseDer {
 
 	@SerializedName("totalResults")
 	private int totalResults;
@@ -43,7 +43,7 @@ public class Response{
 	@Override
  	public String toString(){
 		return 
-			"Response{" + 
+			"ResponseDer{" +
 			"totalResults = '" + totalResults + '\'' + 
 			",articles = '" + articles + '\'' + 
 			",status = '" + status + '\'' + 

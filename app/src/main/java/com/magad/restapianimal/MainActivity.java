@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.Home:
-                    fm.beginTransaction().replace(R.id.Container, new Berita()).addToBackStack("").commit();
+                    fm.beginTransaction().replace(R.id.Container, new Home()).addToBackStack("").commit();
                     return true;
                 case R.id.berita:
-                    fm.beginTransaction().replace(R.id.Container, new Home()).addToBackStack("").commit();
+                    fm.beginTransaction().replace(R.id.Container, new Berita()).addToBackStack("").commit();
                     return true;
             }
             return false;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fm = getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.Container, new Berita() ).addToBackStack("").commit();
+        fm.beginTransaction().add(R.id.Container, new Home() ).addToBackStack("").commit();
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
